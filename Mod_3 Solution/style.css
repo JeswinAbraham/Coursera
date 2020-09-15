@@ -1,0 +1,124 @@
+/* Global View */
+*{
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    background-image: url(images/background-adare-restaurant.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font: 1.125rem;
+    font-family: 'Merriweather', serif;
+    line-height: 1.5rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.head-container{
+    width: 100%;
+    min-height: 100px;
+    background-color: rgba(65, 64, 64, 0.336);
+}
+header{
+    max-width: 1024px;
+    min-height: 100px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mybutton{
+    margin-left: 20px;
+    font-family: 'Merriweather', serif;
+    border: 1px solid rgb(184, 180, 180);
+    padding: 10px 25px;
+}
+.mob-wrap{
+    display: none;
+}
+.burger-menu{
+    width: 40px;
+}
+main{
+    max-width: 1024px;
+    min-height: 200px;
+    margin: 0px auto;
+}
+.body-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    width: 32%;
+    margin: 40px 0;
+    border: 1px solid rgb(209, 198, 198);
+    padding: 30px;
+}
+.card h1{
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+}
+.card p{
+    line-height: 2rem;
+}
+p a{
+    color: rgb(199, 228, 199);
+}
+.card3 p a{
+    display: none;
+}
+footer{
+    max-width: 1024px;
+    min-height: 200px;
+    margin: 0px auto;
+}
+.foot-container{
+    width: 100%;
+    background-color: rgba(65, 64, 64, 0.336);
+    min-height: 200px;
+}
+/* Tablet view */
+@media (min-width: 768px ) and (max-width: 911px){
+    .card1,.card2{
+        width: 46%;
+    }
+    .card3{
+        width: 100%;
+    }
+
+}
+@media (max-width: 767px){
+    .card{
+        width: 100%;
+    }
+    nav{
+        display: none;
+    }
+    .mob-wrap{
+        display: block;
+        position: relative;
+    }
+    .navbutton{
+        display: block;
+        padding: 0.625rem 1.25rem;
+        margin-bottom: 0.4rem;
+
+    }
+    .mob-nav{
+        display: none;
+        position: absolute;
+        background-color: rgba(83, 80, 80, 0.664);
+        text-align: center;
+        margin-left: -50px;
+        padding:0.9rem 1rem;
+    }
+    .card3 p a{
+        display: inline;
+    }
+}
+
