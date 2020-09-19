@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+}
+img{
+    height: 200px;
+}
+main{
+    width: 1280px;
+    min-height: 400px;
+    font-family: 'Spartan', sans-serif;
+    color: hsl(300, 43%, 22%);
+    margin: 0 auto;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.459);
+    padding: 50px 50px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.col{
+    width: 45%;
+}
+h1{
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+p{
+    line-height: 2rem;
+}
+.box1,.box2,.box3{
+    background-color: rgba(238, 184, 210, 0.349);
+    border-radius: .35rem;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.box3{
+    margin-left: 60px;
+}
+.box2{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.box1{
+    margin-right: 60px;
+}
+.fa{
+    font-size: small;
+    color: goldenrod;
+    padding-left: 4px;
+}
+.text{
+    padding-left: 20px;
+}
+.coll{
+    width: 32%;
+    background-color: hsl(300, 43%, 22%);
+    color: white;
+    font-size: small;
+    padding: 30px;
+    border-radius: 5px;
+}
+.review-img{
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+.mybox1{
+    margin-bottom: 60px;
+}
+.mybox2{
+    margin: 30px 0;
+
+}
+.mybox3{
+    margin-top: 60px;
+}
+.wrap{
+    display: flex;
+    align-items: center;
+}
+.name{
+    margin-top: -11px;
+}
+.name p{
+    line-height: 0.5rem;
+    font-weight: 500;
+}
+.name div{
+    font-weight: 500;
+    color: hsl(300, 39%, 62%);
+}
+/* Mobile View */
+@media(max-width: 375px){
+    .bg{
+        display: none;
+    }
+    main{
+        width: 50vh;
+        box-shadow: none;
+        padding: 30px;
+        margin: 0 0;
+    }
+    .col{
+        width: 100%;
+    }
+    .box1,.box2,.box3{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    h1{
+        font-weight: 700;
+        margin-bottom: 10px;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .col p{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .mybox1{
+        margin-bottom: 0px;
+    }
+    .mybox2{
+        margin: 10px,0;
+    }
+    .mybox3{
+        margin-top: 0px;
+    }
+    .coll{
+        width: 100%;
+    }
+    .star{
+        padding-left: 70px;
+    }
+    .text{
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+    }
+}
